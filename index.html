@@ -12,22 +12,43 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-        body {
-            padding: 2rem 0;
-        }
-        #header {
-            padding-top: 0 !important;
-            margin-top: 0 !important;
-        }
-			#main{
-				padding: 2rem;
+    body {
+        padding: 2rem 0;
+    }
+    #header {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    #main{
+        padding: 2rem;
         max-width: 800px; /* Adjust width as needed */
         margin: 0 auto;
-			}
-			article{
-				margin-bottom: 2rem;
-			}
-    </style>
+    }
+    article{
+        margin-bottom: 2rem;
+    }
+
+    /* Add this for horizontal navigation */
+    nav ul {
+        list-style-type: none; /* Removes bullet points */
+        margin: 0;
+        padding: 0;
+        display: flex; /* Makes the links appear in a row */
+        justify-content: center; /* Centers the links */
+        gap: 2rem; /* Adds space between links */
+    }
+
+    nav ul li a {
+        text-decoration: none; /* Removes underline */
+        color: #333; /* Text color */
+        font-weight: 500; /* Makes text slightly bold */
+    }
+
+    nav ul li a:hover {
+        color: #4a7c59; /* Green color on hover */
+    }
+</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -60,15 +81,6 @@
 					<div id="main">
 
 						<!-- About -->
-						<nav>
-        <ul>
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 			<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="Aavika Dhanda" /></span>
